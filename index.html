@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cellify - Stem Cells Malaysia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f8fb;
+      color: #333;
+    }
+    /* Header & Navigation */
+    header {
+      background: #0a74a6;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #39a07e;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1600x900?text=Stem+Cell+Therapy') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(10, 116, 166, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .hero a {
+      background: #39a07e;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    /* Section Styling */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0a74a6;
+    }
+    .about p,
+    .why-choose p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    /* Cards for Services */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    /* Facilities Section */
+    .facilities {
+      text-align: center;
+    }
+    .facilities-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .facilities-images img {
+      width: 300px;
+      border-radius: 5px;
+    }
+    /* News Items */
+    .news-item {
+      margin-bottom: 40px;
+    }
+    .news-item h3 {
+      margin-bottom: 10px;
+      color: #0a74a6;
+    }
+    .news-item p {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    /* Footer */
+    footer {
+      background: #0a74a6;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- Replace 'image.png' with your actual logo file -->
+        <img src="image.png" alt="Cellify Logo">
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-choose">Why Choose Us</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Revolutionizing Regenerative Medicine</h1>
+      <p>New Hope, New Life with Cellify</p>
+      <a href="#about">Discover More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="section-title">
+      <h2>About Cellify</h2>
+    </div>
+    <p>
+      At Cellify, we are committed to advancing regenerative medicine through innovative stem cell therapies in Malaysia. Our mission is to harness the healing power of stem cells to promote recovery, rejuvenation, and an improved quality of life.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400?text=Stem+Cell+Therapy" alt="Stem Cell Therapy">
+        <h3>Stem Cell Therapy</h3>
+        <p>
+          Utilizing advanced mesenchymal stem cells, our therapies support tissue repair, reduce inflammation, and foster natural healing processes.
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400?text=Cellular+Immunotherapy" alt="Cellular Immunotherapy">
+        <h3>Cellular Immunotherapy</h3>
+        <p>
+          Our innovative immunotherapy treatments activate your immune system to target and destroy abnormal cells, providing a personalized approach to health.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose" class="why-choose">
+    <div class="section-title">
+      <h2>Why Choose Cellify?</h2>
+    </div>
+    <p>
+      Our commitment to quality, safety, and ethical practices sets us apart. With a state-of-the-art facility and an expert team, we adhere to international standards ensuring every treatment meets rigorous regulatory requirements.
+    </p>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="facilities">
+    <div class="section-title">
+      <h2>Our Facilities</h2>
+    </div>
+    <p>
+      Our modern facility is equipped with cutting-edge technology designed to deliver the highest standards in stem cell therapy production and patient safety.
+    </p>
+    <div class="facilities-images">
+      <img src="https://via.placeholder.com/300x200?text=Facility+1" alt="Facility 1">
+      <img src="https://via.placeholder.com/300x200?text=Facility+2" alt="Facility 2">
+      <img src="https://via.placeholder.com/300x200?text=Facility+3" alt="Facility 3">
+    </div>
+  </section>
+
+  <!-- News & Events Section -->
+  <section id="news" class="news">
+    <div class="section-title">
+      <h2>News &amp; Events</h2>
+    </div>
+    <div class="news-item">
+      <h3>Cellify Launches New Stem Cell Program</h3>
+      <small>20/02/2025</small>
+      <p>
+        We are excited to announce the launch of our groundbreaking stem cell therapy program. Stay tuned for more updates on our innovative treatments.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="news-item">
+      <h3>Advancements in Regenerative Medicine</h3>
+      <small>10/02/2025</small>
+      <p>
+        Join us as our experts share the latest breakthroughs in regenerative medicine at our upcoming conference. Learn how our research is paving the way for future innovations.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+      Have questions or want to learn more about our services? Reach out to us at:
+    </p>
+    <p style="text-align: center;">
+      Email: <a href="mailto:info@cellifystemcells.my">info@cellifystemcells.my</a> | Phone: +60 12-3456789
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Quick Links:
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#why-choose">Why Choose Us</a> |
+      <a href="#facilities">Facilities</a> |
+      <a href="#news">News</a> |
+      <a href="#contact">Contact</a>
+    </p>
+    <p>&copy; 2025 Cellify. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
